@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — protocols with no token, ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="atmosphere" aria-hidden="true"></div>
+<header class="masthead">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" stroke-opacity=".35"></circle>
+      <circle cx="20" cy="20" r="10.5" fill="none" stroke="currentColor" stroke-opacity=".25"></circle>
+      <circle cx="20" cy="20" r="3.2" fill="currentColor"></circle>
+      <path d="M20 20 L33.5 9.5 A17.5 17.5 0 0 1 37 20 Z" fill="currentColor" fill-opacity=".22"></path>
+      <path d="M20 20 L37 20" stroke="currentColor" stroke-width="1.4"></path>
+    </svg>
+    <div class="brand-text">
+      <span class="wordmark">Token Radar</span>
+      <span class="tagline">launch watch</span>
+    </div>
+  </div>
+  <div class="mast-meta" id="mast-meta"></div>
+</header>
+
+<main id="app" aria-busy="true">
+  <noscript><p class="noscript">This page reads its data from data.js beside the dashboard and needs JavaScript to render.</p></noscript>
+</main>
+
+<footer class="foot">
+  <p>Radar model scores pre-token protocols from DefiLlama's sealed protocol snapshot. Implied value is the entry's estimate of a launch value, not a price, a forecast, or advice.</p>
+  <p id="foot-meta" class="mono"></p>
+</footer>
+
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
